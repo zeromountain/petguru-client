@@ -31,10 +31,11 @@ export default function Login() {
   const router = useRouter();
   const dispatch = useDispatch();
   const [error, setError] = useState(null);
+  const [auth, setAuth] = useState(false);
 
-  const { form, auth, authError, user } = useSelector(({ auth, user }) => ({
+  const { form, /*auth,*/ authError, user } = useSelector(({ auth, user }) => ({
     form: auth.login, // form state를 로그인 form으로 설정
-    auth: auth.auth,
+    // auth: auth.auth,
     authError: auth.authError,
     user: user.user,
   }));
@@ -63,6 +64,7 @@ export default function Login() {
     console.log(response.profileObj);
     // 디스패치로 서버에 response 데이터 넘기고 토큰 발급??
     dispatch(googleLogin({ email, name, googleId }));
+    setAuth(true);
   };
 
   // 컴포넌트 첫 렌더링 => 폼 초기화
@@ -175,9 +177,9 @@ export default function Login() {
                   onFailure={responseGoogle}
                   cookiePolicy={"single_host_origin"}
                 />
-                <button type="button" className="btn-login">
+                {/* <button type="button" className="btn-login">
                   <Link href="/home">Guest 로그인</Link>
-                </button>
+                </button> */}
               </form>
             </div>
             <div className="find-info">

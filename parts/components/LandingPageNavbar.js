@@ -21,11 +21,11 @@ const LandingPageNavBar = ({ children, props }) => {
               <Link href="/login">Login</Link>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a>
               <Link href="">Ko/En</Link>
             </a>
-          </li>
+          </li> */}
         </nav>
       </header>
       {children}

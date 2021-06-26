@@ -4,7 +4,10 @@ const LandingPageMain = ({ children, props }) => {
   return (
     <>
       <section class="first">
-        <div class="backgroundImage" style={{ backgroundImage: "url(img/3.jpeg)" }}></div>
+        <div
+          class="backgroundImage"
+          style={{ backgroundImage: "url(img/3.jpeg)" }}
+        ></div>
         <h1>반려생활 궁금증 PetGuru와 함께</h1>
         <h3>반려생활 궁금증 PetGuru와 함께</h3>
       </section>
@@ -28,40 +31,46 @@ const LandingPageMain = ({ children, props }) => {
         <br />
         <hr />
         <ul class="grid">
-          <li class="small" style={{ backgroundImage: "url(img/4.jpeg)" }}></li>
-          <li class="large" style={{ backgroundImage: "url(img/4.jpeg)" }}></li>
-          <li class="large" style={{ backgroundImage: "url(img/4.jpeg)" }}></li>
-          <li class="small" style={{ backgroundImage: "url(img/4.jpeg)" }}></li>
+          <li
+            class="small"
+            style={{ backgroundImage: "url(/img/QA.png)" }}
+          ></li>
+          <li
+            class="large"
+            style={{ backgroundImage: "url(/img/submitPost.gif)" }}
+          ></li>
         </ul>
       </section>
 
       <section class="third">
         <h3 class="title">PetGuru Service</h3>
-        <p>
-        
-        </p>
+        <p></p>
         <hr />
 
         <ul class="grid">
           <li>
-          <i class="fas fa-question"></i>
+            <i class="fas fa-question"></i>
             <h4>질문하기</h4>
             <p>
-              질문하기에는 무슨 말을 적어야 좋을까 질문하기에는 무슨 말을 적어야 좋을까 질문하기에는 무슨 말을 적어야 좋을까
+              PetGuru에 질문을 등록하고 궁금증을 해결하세요! <br /> 수의사,
+              훈련사 및 전문가 인증 멘토들이 답변해줄 거에요!
             </p>
           </li>
           <li>
-          <i class="fas fa-stethoscope"></i>
+            <i class="fas fa-stethoscope"></i>
             <h4>진단받기</h4>
             <p>
-              진단받기에는 무슨 말을 적어야 좋을까 진단받기에는 무슨 말을 적어야 좋을까 진단받기에는 무슨 말을 적어야 좋을까
+              내 반려동물이 갑자기 아픈가요?<br/>
+              PetGuru의 수의사 멘토님께 질문하세요!
             </p>
           </li>
           <li>
-          <i class="fas fa-search"></i>
+            <i class="fas fa-search"></i>
             <h4>내 반려견 찾기</h4>
             <p>
-              내 반려견 찾기에는 무슨 말을 적어야 좋을까 내 반려견 찾기에는 무슨 말을 적어야 좋을까 내 반려견 찾기에는 무슨 말을 적어야 좋을까
+              반려동물의 정보와 실종된 지역을 등록하면
+              <br />
+              많은 반려인들이 도움을 드릴 거에요!
             </p>
           </li>
         </ul>

@@ -2,356 +2,330 @@
 General
 -------------*/
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-	font: normal 16px sans-serif;
-	color: #555;
+html {
+  font: normal 16px sans-serif;
+  color: #555;
 }
 
-ul, nav{
-	list-style: none;
+ul,
+nav {
+  list-style: none;
 }
 
 .logo {
-	padding-bottom: 20px;
-    width: 95px;
-    height: 125px;
-}
- 
-
-a{
-	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
-
-	opacity: 0.9;
+  padding-bottom: 20px;
+  width: 95px;
+  height: 125px;
 }
 
-a:hover{
-	opacity: 1;
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  opacity: 0.9;
 }
 
-a.btn{
-
-	color: #fff;
-	padding: 5px;
-	border-radius: 4px;
-	text-transform: uppercase;
-	background-color: #798777;
-	font-weight: 800;
-	text-align: center;
+a:hover {
+  opacity: 1;
 }
 
-hr{
-	width: 300px;
-	height: 2px;
-	background-color: #903749;
-	border: 0;
-	margin-bottom: 80px;
+a.btn {
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #798777;
+  font-weight: 800;
+  text-align: center;
 }
 
-section{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	padding: 125px 0px;
-	
+hr {
+  width: 300px;
+  height: 2px;
+  background-color: #903749;
+  border: 0;
+  margin-bottom: 80px;
 }
 
-@media (max-width: 1000px){
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-	section{
-		padding: 100px 0px;
-	}
-
+  padding: 125px 0px;
 }
 
-@media (max-width: 600px){
-
-	section{
-		padding: 50px 30px;
-	}
-
+@media (max-width: 1000px) {
+  section {
+    padding: 100px 0px;
+  }
 }
 
-section h3.title{
-	color: #798777;
-	text-transform: capitalize; 
-	font: bold 32px 'Open Sans', sans-serif;
-	margin-bottom: 35px;
-	text-align: center;
+@media (max-width: 600px) {
+  section {
+    padding: 50px 30px;
+  }
 }
 
-section p{
-	max-width: 800px;
-	text-align: center;
-	margin-bottom: 35px;
-	padding: 0 20px;
-	line-height: 1.5;
-
+section h3.title {
+  color: #798777;
+  text-transform: capitalize;
+  font: bold 32px "Open Sans", sans-serif;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
-ul.grid{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+section p {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 1.5;
 }
 
-
+ul.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /*-------------
 NavBar Header
 -------------*/
 
-
-header{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: #96a594;
-	padding: 20px 100px;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #96a594;
+  padding: 20px 100px;
 }
 
-header h2{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 30px;
+header h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
 }
 
-header nav{
-	display: flex;
+header nav {
+  display: flex;
 }
 
-header nav li{
-	margin: 0 15px;
+header nav li {
+  margin: 0 15px;
 }
 
-header nav li:first-child{
-	margin-left: 0;	
+header nav li:first-child {
+  margin-left: 0;
 }
 
-header nav li:last-child{
-	margin-right: 0;	
+header nav li:last-child {
+  margin-right: 0;
 }
 
-@media (max-width: 1000px){
-	header{
-		padding: 20px 100px;
-	}
+@media (max-width: 1000px) {
+  header {
+    padding: 20px 100px;
+  }
 }
 
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
 
-@media (max-width: 700px){
-	header{
-		flex-direction: column;		
-	}
-
-	header h2{
-		margin-bottom: 15px;
-	}
+  header h2 {
+    margin-bottom: 15px;
+  }
 }
 
 /*----------------
  	first Section
 ----------------*/
 
-.first{
-	position: relative;
-	justify-content: center;
-	min-height: 100vh;
-	color: #798777;
-	text-align: center;
+.first {
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: #798777;
+  text-align: center;
 }
 
-.first .backgroundImage{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-color: #f8ede3;
-	opacity: 0.5;
-	z-index: -1;
+.first .backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: #f8ede3;
+  opacity: 0.5;
+  z-index: -1;
 }
 
-.first .backgroundImage:after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #f8ede3;
-	opacity: 0.5;
+.first .backgroundImage:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f8ede3;
+  opacity: 0.5;
 }
 
-.first h1{
-	color: #798777;
-	font: bold 60px 'Open Sans', sans-serif;
-	margin-bottom: 15px;
+.first h1 {
+  color: #798777;
+  font: bold 60px "Open Sans", sans-serif;
+  margin-bottom: 15px;
 }
 
-
-.first h3{
-	font: normal 28px 'Open Sans', sans-serif;
-	margin-bottom: 40px;
+.first h3 {
+  font: normal 28px "Open Sans", sans-serif;
+  margin-bottom: 40px;
 }
 
 /*--------------------
  	Second Section
 ---------------------*/
 
-.second{
-	background-color: #fff;
+.second {
+  background-color: #fff;
 }
 
-.second .grid li{
-	padding: 20px;
-	height: 350px;
-	border-radius: 3px;
+.second .grid li {
+  padding: 20px;
+  height: 350px;
+  border-radius: 3px;
 
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
-	background-color: #333;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+  background-color: #333;
 }
 
-.second .grid li.small{
-	flex-basis: 40%;
+.second .grid li.small {
+  flex-basis: 40%;
 }
 
-.second .grid li.large{
-	flex-basis: 60%;
+.second .grid li.large {
+  flex-basis: 60%;
 }
 
-@media (max-width: 1000px){
-
-	.second .grid li.small,
-	.second .grid li.large{
-		flex-basis: 100%;
-	}
-
+@media (max-width: 1000px) {
+  .second .grid li.small,
+  .second .grid li.large {
+    flex-basis: 100%;
+  }
 }
-
-
-
 
 /*----------------------
  	Third Section
 ----------------------*/
 
-.third{
-	background-color: #f7f7f7;
+.third {
+  background-color: #f7f7f7;
 }
-.third .title{
-	color: #555;
-}
-
-.third .grid li{
-	padding: 0 30px;
-	flex-basis: 33%;
-	text-align: center;
+.third .title {
+  color: #555;
 }
 
-.third .grid li i{
-    font-size: 50px;
-    color: #798777;
-    margin-bottom: 25px;
+.third .grid li {
+  padding: 0 30px;
+  flex-basis: 33%;
+  text-align: center;
 }
 
-.third .grid li h4{
-	color: #555;
-    font-size: 20px;
-    margin-bottom: 25px;
+.third .grid li i {
+  font-size: 50px;
+  color: #798777;
+  margin-bottom: 25px;
 }
 
-.third .grid li p{
-    margin: 0;
+.third .grid li h4 {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
-@media (max-width: 1000px){
-
-	.third .grid li{
-		flex-basis: 70%;
-		margin-bottom: 65px;
-	}
-
-	.third .grid li:last-child{
-		margin-bottom: 0;
-	}
-
+.third .grid li p {
+  margin: 0;
 }
 
+@media (max-width: 1000px) {
+  .third .grid li {
+    flex-basis: 70%;
+    margin-bottom: 65px;
+  }
 
-@media (max-width: 600px){
-
-	.third .grid li{
-		flex-basis: 100%;
-	}
-
+  .third .grid li:last-child {
+    margin-bottom: 0;
+  }
 }
 
-
+@media (max-width: 600px) {
+  .third .grid li {
+    flex-basis: 100%;
+  }
+}
 
 /*-------------
  	Footer
 -------------*/
 
-footer{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	color: #fff;
-	background-color: #414a4f;
-	padding: 60px 0;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #414a4f;
+  padding: 60px 0;
 }
 
-footer ul{
-	display: flex;
-	margin-bottom: 25px;
-	font-size: 32px;
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+  font-size: 32px;
 }
 
-footer ul li{
-	margin: 0 8px;	
+footer ul li {
+  margin: 0 8px;
 }
 
-footer ul li:first-child{
-	margin-left: 0;	
+footer ul li:first-child {
+  margin-left: 0;
 }
 
-footer ul li:last-child{
-	margin-right: 0;	
+footer ul li:last-child {
+  margin-right: 0;
 }
 
-footer p{
-	text-transform: uppercase;
-	font-size: 14px;
-	color: rgba(255,255,255,0.6);
-	margin-bottom: 10px;
+footer p {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
 }
 
-footer p a{
-	color: #fff;
+footer p a {
+  color: #fff;
 }
 
-@media (max-width: 700px){
-
-	footer{
-		padding: 80px 15px;
-	}
-
+@media (max-width: 700px) {
+  footer {
+    padding: 80px 15px;
+  }
 }
